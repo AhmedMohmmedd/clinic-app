@@ -1,3 +1,4 @@
+import 'package:clinic/views/user/widgets/booking_view_item.dart';
 import 'package:flutter/material.dart';
 
 class BookingView extends StatelessWidget {
@@ -5,12 +6,13 @@ class BookingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        height: 200,
-        width: 200,
-        color: Colors.green,
-      ),
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: ListView.builder(
+          itemCount: 2,
+          itemBuilder: (context, builder) {
+            return const BookingViewItem();
+          }),
     );
   }
 }

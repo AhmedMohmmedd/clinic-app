@@ -69,3 +69,14 @@ class _UserViewState extends State<UserView> {
     );
   }
 }
+
+//GlobalKey<ScaffoldState> _key = GlobalKey();
+// InkWell(
+//         onTap: () {
+//           _key.currentState.openDrawer();
+//         },
+//         child: Icon(
+//           icon,
+//           color: color,
+//         ),
+//       ),

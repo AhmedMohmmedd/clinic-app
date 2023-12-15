@@ -1,6 +1,6 @@
-import 'package:clinic/views/widgets/custom_list_tile.dart';
+import 'package:clinic/views/user/widgets/custom_list_tile.dart';
 import 'package:clinic/views/widgets/custom_text_field.dart';
-import 'package:clinic/views/widgets/doctor_info_section.dart';
+import 'package:clinic/views/user/widgets/doctor_info_section.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/custom_material_button.dart';
