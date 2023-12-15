@@ -1,6 +1,6 @@
 import 'package:clinic/views/auth/sign_in_view.dart';
 import 'package:clinic/views/auth/sign_up_view.dart';
-import 'package:clinic/views/user/user_home_view.dart';
+import 'package:clinic/views/user/user_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,14 +14,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-     initialRoute: '/SignInView',
-     getPages: [
+      initialRoute: '/SignInView',
+      getPages: [
         GetPage(name: '/SignInView', page: () => SignInView()),
         GetPage(name: '/SignUpView', page: () => SignUpView()),
-        GetPage(name: '/UserHomeView', page: () => UserHomeView()),
+        GetPage(name: '/UserHomeView', page: () => UserView()),
       ],
     );
   }
