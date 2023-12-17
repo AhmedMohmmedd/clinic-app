@@ -1,4 +1,4 @@
-
+import 'package:clinic/core/app_constants.dart';
 import 'package:flutter/material.dart';
 
 class BookingViewItem extends StatelessWidget {
@@ -21,70 +21,55 @@ class BookingViewItem extends StatelessWidget {
           ),
           color: Colors.grey[200],
         ),
-        child: const Padding(
-          padding:
-              const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                // 'احمد محمد محمد',
-                'Ahmed Mohmmed Kirsha',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                  fontStyle: FontStyle.italic,
-                ),
-              ),
-              SizedBox(
+              const Text(
+                  // 'احمد محمد محمد',
+                  'Ahmed Mohmmed Kirsha',
+                  style: AppConstants.textStyle24),
+              const SizedBox(
                 height: 10,
               ),
               Text(
                 'Check-Up',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                ),
+                style: AppConstants.textStyle18
+                    .copyWith(fontStyle: FontStyle.normal),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              Row(
+               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
+                 const Column(
                     children: [
                       Text(
                         '28-11-2024',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
+                        style:AppConstants.textStyle16
                       ),
                       SizedBox(
                         height: 5,
                       ),
                       Text(
                         'at: 4,5 PM',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
+                        style: AppConstants.textStyle16
                       ),
                     ],
                   ),
                   Material(
                     color: Colors.red,
-                    borderRadius: BorderRadius.all(Radius.circular(99)),
+                    borderRadius:const BorderRadius.all(Radius.circular(99)),
                     child: MaterialButton(
                       height: 80,
                       textColor: Colors.white,
                       onPressed: null,
                       child: Text(
                         'Canceld',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                        style:AppConstants.textStyle18.copyWith(
+                          fontStyle: FontStyle.normal,
                         ),
                       ),
                     ),

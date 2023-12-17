@@ -34,11 +34,7 @@ class DoctorInfoSection extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * .5,
                     child: const Text(
                       'Dr: Ahmed Mohmmed',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
-                        fontSize: 18,
-                      ),
+                      style: AppConstants.textStyle18,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
